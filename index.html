@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alugue Painel by Juçara Leite | Tudo para sua festa!</title>
+    <style>
+        /* Estilos Globais e Cores (Paleta Festiva e Elegante) */
+        :root {
+            --primary-color: #ff6f91; /* Rosa alegre/festivo */
+            --secondary-color: #ffbccb; /* Rosa claro */
+            --dark-color: #4a4a4a; /* Grafite para leitura confortável */
+            --light-color: #fff9fa; /* Fundo suave */
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        /* Menu / Cabeçalho */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+align-items: center;
+            padding: 20px 5%;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .logo span {
+            font-size: 14px;
+            color: var(--dark-color);
+            display: block;
+            font-weight: normal;
+        }
+
+        /* Seção Principal (Hero) */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--light-color) 100%);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: var(--dark-color);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            transition: transform 0.2s, background-color 0.2s;
+            display: inline-block;
+        }
+
+        .btn-whatsapp:hover {
+transform: scale(1.05);
+            background-color: #20ba5a;
+        }
+
+        /* Seções Gerais */
+        section {
+            padding: 60px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Sobre Nós */
+        .about-text {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Serviços / Diferenciais */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+            text-align: center;
+border: 1px solid #f0f0f0;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Contato e Rodapé */
+        footer {
+            background-color: var(--dark-color);
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        /* Responsividade para Celulares */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 16px; }
+            .nav-container { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu Superior -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                Alugue Painel
+ <span>by Juçara Leite</span>
+            </div>
+            <a href="https://wa.me" target="_blank" class="btn-whatsapp" style="padding: 10px 20px; font-size: 14px;">Chamar no WhatsApp</a>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+        <div class="container">
+            <h1>Tudo para a sua festa!</h1>
+            <p>Locação de painéis e acervos decorativos que transformam comemorações em memórias inesquecíveis.</p>
+            <a href="https://wa.me" target="_blank" class="btn-whatsapp">🎈 Fazer um Orçamento Grátis</a>
+        </div>
+    </section>
+
+    <!-- Nossa História -->
+    <section id="sobre" style="background-color: var(--white);">
+        <div class="container">
+            <h2>Nossa História</h2>
+            <div class="about-text">
+                <p>A Alugue Painel nasceu em plena pandemia, em um momento em que muitas famílias sentiam a profunda necessidade de continuar celebrando os momentos especiais dos seus filhos, mesmo dentro de casa. Foi assim que começamos, levando alegria para dentro dos lares através do nosso “Kit Festa Pandemia”. O cenário mudou, mas nosso propósito continua o mesmo: colorir e dar vida aos seus momentos mais felizes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos">
+        <div class="container">
+            <h2>O que Oferecemos</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="icon">🖼️</span>
+                    <h3>Locação de Painéis</h3>
+                    <p>Estruturas temáticas e de diversas cores para criar o fundo perfeito para as fotos do seu evento.</p>
+                </div>
+                <div class="card">
+                    <span class="icon">✨</span>
+                    <h3>Acervos Completos</h3>
+                    <p>Mesas, suportes de doces, vasos e bandejas selecionadas para compor a mesa principal com elegância.</p>
+</div>
+                <div class="card">
+                    <span class="icon">🎁</span>
+                    <h3>Praticidade</h3>
+                    <p>Soluções pensadas para que você monte sua festa de forma simples, rápida e encantadora.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" style="background-color: var(--white);">
+        <div class="container">
+            <h2>Por que nos escolher?</h2>
+            <div class="grid">
+                <div class="card" style="border-top: 4px solid var(--primary-color);">
+                    <span class="icon">💎</span>
+                    <h3>Qualidade do Produto</h3>
+                    <p>Painéis e materiais impecáveis, higienizados e prontos para brilhar na sua decoração.</p>
+                </div>
+                <div class="card" style="border-top: 4px solid var(--primary-color);">
+                    <span class="icon">🤝</span>
+                    <h3>Atendimento Dedicado</h3>
+                    <p>Cuidado e atenção humanizada em cada detalhe do seu atendimento para garantir o sucesso da sua festa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé com Informações de Contato -->
+    <footer>
+        <div class="container" style="padding: 20px 0;">
+            <div class="contact-info">
+                <h3>Alugue Painel by Juçara Leite</h3>
+                <p>📍 Rua Machado neto, 281 - Salvador/BA</p>
+                <p>📱 WhatsApp: <a href="tel:+5571988409033">71 98840-9033</a></p>
+                <p>✉️ E-mail: <a href="mailto:loja.apple@gmail.com">loja.apple@gmail.com</a></p>
+            </div>
+            <p style="font-size: 14px; margin-top: 20px; opacity: 0.7;">&copy; 2026 Alugue Painel. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
